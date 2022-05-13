@@ -12,10 +12,10 @@ public class CustomJPanel extends JPanel {
 
     BufferedImage image = null;
 
-    public CustomJPanel() {
-
-    }
-
+    /**
+     * @param g The image being drawn
+     * This function draws an image in a JPanel
+     */
     @Override
     public void paintComponent(Graphics g) {
         // TODO Auto-generated method stub
@@ -26,6 +26,10 @@ public class CustomJPanel extends JPanel {
         g.drawImage(image, this.getWidth() / 4, this.getHeight() / 4, this.getWidth() / 2, this.getHeight() / 2, this);
     }
 
+    /**
+     * @param image The image being drawn
+     * This function sets the image that will be drawn onto the JPanel
+     */
     public void setImage(BufferedImage image) {
         this.image = image;
         repaint();

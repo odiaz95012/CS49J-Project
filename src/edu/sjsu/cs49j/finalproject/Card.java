@@ -25,9 +25,16 @@ public class Card {
         else description = rank + " of " + suit;
     }
 
+    /**
+     * @return The rank of the inputted shorthand.
+     */
     public String getRank(){
         return shorthand.substring(0,shorthand.length() - 1);
     }
+
+    /**
+     * @return The suit of the inputted shorthand.
+     */
     public Character getSuit(){
         return shorthand.charAt(shorthand.length()-1);
     }
