@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 
 /**
  * This class creates a custom version of JPanel that makes it easy to draw images on the panel.
+ * Code from https://stackoverflow.com/questions/34762843/want-to-add-pictures-to-a-jpanel-on-click-of-a-button
  */
 public class CustomJPanel extends JPanel {
 
