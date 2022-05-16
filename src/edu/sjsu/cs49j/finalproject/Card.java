@@ -7,22 +7,6 @@ public class Card {
 
     public Card(String shorthand) {
         Card.shorthand = shorthand;
-        setDescription();
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    private void setDescription() {
-        if (shorthand.length() < 2 || shorthand.length() > 3){
-            description = UNKNOWN;
-            return;
-        }
-        String rank = getRank();
-        Character suit = getSuit();
-        if(rank.equals(UNKNOWN)) description = UNKNOWN;
-        else description = rank + " of " + suit;
     }
 
     /**
