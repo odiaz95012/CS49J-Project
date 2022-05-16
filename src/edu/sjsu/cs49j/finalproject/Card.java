@@ -1,8 +1,6 @@
 package edu.sjsu.cs49j.finalproject;
 
 public class Card {
-    private String description;
-    private final String UNKNOWN = "Unknown";
     private static String shorthand;
 
     public Card(String shorthand) {
